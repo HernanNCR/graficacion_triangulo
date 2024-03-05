@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .punto {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+            margin: 1px;
+            display: inline-block;
+            position: relative; 
+        }
+        
+        #contenedor {
+            position: relative;
+        }
+        .linea {
+            position: absolute;
+            background-color: red;
+            height: 3px;
+            transform-origin: top left;
+        }
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body  >
+
+
+    <p>en x puedes agregar hasta 20 y en y hasta el numero 10</p>
+
+    <label for="">coordenada x</label>
+    <input type="text" id="id_x">
+
+    <label for="">coordenada y</label>
+    <input type="text" id="id_y">
+
+    
+
+    <br>
+    <label for="">coordenada x</label>
+    <input type="text" id="id_x2">
+
+    <label for="">coordenada y</label>
+    <input type="text" id="id_y2">
+
+    
+    <br>
+    <label for="">coordenada x</label>
+    <input type="text" id="id_x3">
+
+    <label for="">coordenada y</label>
+    <input type="text" id="id_y3">
+    <br>
+
+    <button onclick="agregarCoordenadas()">agregar</button>
+
+
+    <br><br>
+
+    <div id="contenedor"></div>
+    <br><br>
+    <table id="tabla">
+        <tr>
+            <th>Punto 1</th>
+            <th>Punto 2</th>
+            <th>Pendiente</th>
+        </tr>
+    </table>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
