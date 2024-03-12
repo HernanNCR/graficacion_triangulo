@@ -1,0 +1,31 @@
+.punto {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative; 
+}
+
+#contenedor {
+    position: relative;
+}
+.linea {
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    transform-origin: top left;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 20%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
